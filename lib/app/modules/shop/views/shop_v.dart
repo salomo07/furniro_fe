@@ -351,8 +351,9 @@ class ShopListView extends GetView<ShopController> {
                   Row(
                     children: [
                       Text("Short by",style: poppins20_400(),),
-                      const Gap(17),
-                      SizedBox(width: 120, child: SizedBox(width: 55, child: CustomDropDown(
+                      const Gap(10),
+                      SizedBox(width: 120, child: SizedBox(width: 5, 
+                      child: CustomDropDown(
                         defaultValue: "Default",
                         stringItems: const ["Default","Price","Rating"],
                         onChanged: (val) {
