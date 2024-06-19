@@ -72,6 +72,9 @@ TextStyle poppins20_400() {
 TextStyle poppins20_500() {
   return GoogleFonts.getFont('Poppins',fontSize: 20, fontWeight: FontWeight.w500,color: Colors.black);
 }
+TextStyle poppins20_700() {
+  return GoogleFonts.getFont('Poppins',fontSize: 20, fontWeight: FontWeight.w700,color: Colors.black);
+}
 TextStyle poppins24_500() {
   return GoogleFonts.getFont('Poppins',fontSize: 24, fontWeight: FontWeight.w500,color: Colors.black);
 }

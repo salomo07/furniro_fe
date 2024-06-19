@@ -153,9 +153,129 @@ class ComparationView extends GetView<ShopController> {
               const Gap(40),
               const Divider(),
               const Gap(40),
+              // Container(
+              //   child: Padding(
+              //     padding: const EdgeInsets.all(16.0),
+              //     child: Table(
+              //       border: TableBorder.all(color: Colors.black),
+              //       columnWidths: {
+              //         0: FlexColumnWidth(2),
+              //         1: FlexColumnWidth(3),
+              //         2: FlexColumnWidth(3),
+              //         3: FlexColumnWidth(3),
+              //       },
+              //       children: [
+              //         // Header Row
+              //         TableRow(
+              //           children: [
+              //             // Empty cell for alignment
+              //             Container(),
+              //             Padding(
+              //               padding: const EdgeInsets.all(8.0),
+              //               child: Text(
+              //                 'Product 1',
+              //                 style: TextStyle(fontWeight: FontWeight.bold),
+              //                 textAlign: TextAlign.center,
+              //               ),
+              //             ),
+              //             Padding(
+              //               padding: const EdgeInsets.all(8.0),
+              //               child: Text(
+              //                 'Product 2',
+              //                 style: TextStyle(fontWeight: FontWeight.bold),
+              //                 textAlign: TextAlign.center,
+              //               ),
+              //             ),
+              //             Padding(
+              //               padding: const EdgeInsets.all(8.0),
+              //               child: Text(
+              //                 'Product 3',
+              //                 style: TextStyle(fontWeight: FontWeight.bold),
+              //                 textAlign: TextAlign.center,
+              //               ),
+              //             ),
+              //           ],
+              //         ),
+              //         // Spec 1 Row
+              //         TableRow(
+              //           children: [
+              //             Padding(
+              //               padding: const EdgeInsets.all(8.0),
+              //               child: Text(
+              //                 'Spec 1',
+              //                 style: TextStyle(fontWeight: FontWeight.bold),
+              //               ),
+              //             ),
+              //             Padding(
+              //               padding: const EdgeInsets.all(8.0),
+              //               child: Text('Value 1-1'),
+              //             ),
+              //             Padding(
+              //               padding: const EdgeInsets.all(8.0),
+              //               child: Text('Value 1-2'),
+              //             ),
+              //             Padding(
+              //               padding: const EdgeInsets.all(8.0),
+              //               child: Text('Value 1-3'),
+              //             ),
+              //           ],
+              //         ),
+              //         // Spec 2 Row
+              //         TableRow(
+              //           children: [
+              //             Padding(
+              //               padding: const EdgeInsets.all(8.0),
+              //               child: Text(
+              //                 'Spec 2',
+              //                 style: TextStyle(fontWeight: FontWeight.bold),
+              //               ),
+              //             ),
+              //             Padding(
+              //               padding: const EdgeInsets.all(8.0),
+              //               child: Text('Value 2-1'),
+              //             ),
+              //             Padding(
+              //               padding: const EdgeInsets.all(8.0),
+              //               child: Text('Value 2-2'),
+              //             ),
+              //             Padding(
+              //               padding: const EdgeInsets.all(8.0),
+              //               child: Text('Value 2-3'),
+              //             ),
+              //           ],
+              //         ),
+              //         // Spec 3 Row
+              //         TableRow(
+              //           children: [
+              //             Padding(
+              //               padding: const EdgeInsets.all(8.0),
+              //               child: Text(
+              //                 'Spec 3',
+              //                 style: TextStyle(fontWeight: FontWeight.bold),
+              //               ),
+              //             ),
+              //             Padding(
+              //               padding: const EdgeInsets.all(8.0),
+              //               child: Text('Value 3-1'),
+              //             ),
+              //             Padding(
+              //               padding: const EdgeInsets.all(8.0),
+              //               child: Text('Value 3-2'),
+              //             ),
+              //             Padding(
+              //               padding: const EdgeInsets.all(8.0),
+              //               child: Text('Value 3-3'),
+              //             ),
+              //           ],
+              //         ),
+              //       ],
+              //     ),
+              //   ),
+              // ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Container(
                       decoration: BoxDecoration(
@@ -163,78 +283,43 @@ class ComparationView extends GetView<ShopController> {
                           right: BorderSide(color: greyColor4)
                         )
                       ),
-                      width: isDesktop(Get.width)? 344:130,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text("General",style: poppins28_500(),),
-                          const Gap(28),
-                          Text("Sales Package",style: poppins20_400(),),
-                          const Gap(34),
-                          Text("Model Number",style: poppins20_400(),),
-                          const Gap(34),
-                          Text("Secondary Material",style: poppins20_400(),),
-                          const Gap(34),
-                          Text("Configuration",style: poppins20_400(),),
-                          const Gap(34),
-                          Text("Upholstery Material",style: poppins20_400(),),
-                          const Gap(34),
-                          Text("Upholstery Color",style: poppins20_400(),),
-                        ],
+                      width:isDesktop(Get.width)?344: 244,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            // Text("General",style: poppins28_500(),),
+                            // const Gap(28),
+                            Text("Sales Package",style: poppins20_500(),),
+                            const Gap(34),
+                            Text("Model Number",style: poppins20_500(),),
+                            const Gap(34),
+                            Text("Secondary Material",style: poppins20_500(),),
+                            const Gap(34),
+                            Text("Configuration",style: poppins20_500(),),
+                            const Gap(34),
+                            Text("Upholstery Material",style: poppins20_500(),),
+                            const Gap(34),
+                            Text("Upholstery Color",style: poppins20_500(),),
+                          ],
+                        ),
                       ),
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                        border: Border(
-                          right: BorderSide(color: greyColor4)
-                        )
-                      ),
-                      width: isDesktop(Get.width)? 344:130,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          const Gap(20),
-                          const Gap(28),
-                          Text("Sales Package",style: poppins20_400(),),
-                          const Gap(34),
-                          Text("Model Number",style: poppins20_400(),),
-                          const Gap(34),
-                          Text("Secondary Material",style: poppins20_400(),),
-                          const Gap(34),
-                          Text("Configuration",style: poppins20_400(),),
-                          const Gap(34),
-                          Text("Upholstery Material",style: poppins20_400(),),
-                          const Gap(34),
-                          Text("Upholstery Color",style: poppins20_400(),),
-                        ],
+                    SizedBox(
+                      width:isDesktop(Get.width)?700: 169,
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            detailProduct({}),
+                            detailProduct({}),
+                          ],
+                        ),
                       ),
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                        border: Border(
-                          right: BorderSide(color: greyColor4)
-                        )
-                      ),
-                      width: isDesktop(Get.width)? 344:130,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          const Gap(20),
-                          const Gap(28),
-                          Text("Sales Package",style: poppins20_400(),),
-                          const Gap(34),
-                          Text("Model Number",style: poppins20_400(),),
-                          const Gap(34),
-                          Text("Secondary Material",style: poppins20_400(),),
-                          const Gap(34),
-                          Text("Configuration",style: poppins20_400(),),
-                          const Gap(34),
-                          Text("Upholstery Material",style: poppins20_400(),),
-                          const Gap(34),
-                          Text("Upholstery Color",style: poppins20_400(),),
-                        ],
-                      ),
-                    )
+                    
                   ],
                 ),
               ),
@@ -247,6 +332,37 @@ class ComparationView extends GetView<ShopController> {
       ),
     );
       },
+    );
+  }
+
+  detailProduct(data) {
+    return Container(
+      decoration: BoxDecoration(
+        border: Border(
+          right: BorderSide(color: greyColor4),
+          left: BorderSide(color: greyColor4),
+        )
+      ),
+      width: 344,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("1 sectional sofa",style: poppins20_400(),),
+            const Gap(34),
+            Text("TFCBLIGRBL6SRHS",style: poppins20_400(),),
+            const Gap(34),
+            Text("Solid Wood",style: poppins20_400(),),
+            const Gap(34),
+            Text("L-shaped",style: poppins20_400(),),
+            const Gap(34),
+            Text("Fabric + Cotton",style: poppins20_400(),),
+            const Gap(34),
+            Text("Bright Grey & Lion",style: poppins20_400(),),
+          ],
+        ),
+      ),
     );
   }
   Widget buildProductCard(String title, String price, double rating, String review, String imagePath) {
